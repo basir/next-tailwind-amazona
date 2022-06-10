@@ -38,3 +38,11 @@ textarea {
 .dropdown-link {
   @apply flex p-2 hover:bg-gray-200;
 }
+
+.alert-error {
+  @apply my-3 rounded-lg bg-red-100 p-3 text-red-700;
+}
+
+.alert-success {
+  @apply my-3 rounded-lg bg-green-100 p-3 text-green-700;
+}
