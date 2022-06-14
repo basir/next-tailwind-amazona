@@ -1,6 +1,38 @@
 # Nextjs Tailwind ECommerce Website Like Amazon
 
-decription
+![next amazona](/public/app.jpg)
+
+Build ECommerce Website Like Amazon by Next.js
+
+- Source Code    :  https://github.com/basir/next-amazona
+- Demo Website :  https://nextjs-amazona-final.vercel.app
+
+## What you will learn
+
+- NextJS basics like setting up project, navigating between pages and data fetching
+- NextJS advanced topics like dynamic routing, image optimization,  SSG and SSR
+- Tailwind CSS framework to build responsive website using custom theme, animation and carousel
+- ReactJS including decomposing components, context API and hooks
+- Next Auth package to authenticate customers and admin users
+- MongoDB and Mongoose to save and retrieve data like products, orders and users
+- PayPal developer api to make online payment
+- Deploy web applications on servers like Vercel and Netlify
+
+## Full Course
+
+Learn building this ecommerce website on Udemy with 90% discount:
+https://www.udemy.com/course/nextjs-ecommerce
+
+## Run it Locally
+
+```
+$ git clone https://github.com/basir/next-tailwind-amazona
+$ cd next-tailwind-amazona
+$ npm install
+$ npm run dev
+$ Open http://localhost:3000/api/seed
+$ Open http://localhost:3000
+```
 
 ## Lessons
 
@@ -93,3 +125,7 @@ decription
     2. handle payment
     3. create backend api
     4. update order state
+24. Create Order History Screen
+    1. create my order api
+    2. create order history component
+    3. fetch orders and display them
