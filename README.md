@@ -142,3 +142,7 @@ $ Open http://localhost:3000
     1. Create Admin Menu
     2. create dashboard screen
     3. Implement admin summary api
+28. List Orders For Admin
+    1. create orders page
+    2. create orders api
+    3. use api in page
