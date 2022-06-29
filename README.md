@@ -158,3 +158,8 @@ $ Open http://localhost:3000
     1. create edit page
     2. create api for product
     3. show product data in form
+32. Upload Product Image
+    1. create cloudinary account
+    2. get cloudinary keys
+    3. create upload api
+    4. upload files in edit page
