@@ -87,12 +87,13 @@ export default function ProfileScreen() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">New Password</label>
           <input
             className="w-full"
             type="password"
             id="password"
             {...register('password', {
+              required: 'Please enter new password',
               minLength: { value: 6, message: 'password is more than 5 chars' },
             })}
           />
@@ -102,12 +103,13 @@ export default function ProfileScreen() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="confirmPassword">Confirm Password</label>
+          <label htmlFor="confirmPassword">Confirm New Password</label>
           <input
             className="w-full"
             type="password"
             id="confirmPassword"
             {...register('confirmPassword', {
+              required: 'Please confirm new password',
               validate: (value) => value === getValues('password'),
               minLength: {
                 value: 6,

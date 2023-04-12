@@ -32,10 +32,8 @@ export default function Home({ products, featuredProducts }) {
       <Carousel showThumbs={false} autoPlay>
         {featuredProducts.map((product) => (
           <div key={product._id}>
-            <Link href={`/product/${product.slug}`} passHref>
-              <a className="flex">
-                <img src={product.banner} alt={product.name} />
-              </a>
+            <Link href={`/product/${product.slug}`} passHref className="flex">
+              <img src={product.banner} alt={product.name} />
             </Link>
           </div>
         ))}

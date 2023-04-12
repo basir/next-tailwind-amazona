@@ -42,7 +42,11 @@ export default function ProductScreen(props) {
             alt={product.name}
             width={640}
             height={640}
-            layout="responsive"
+            sizes="100vw"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
           ></Image>
         </div>
         <div>

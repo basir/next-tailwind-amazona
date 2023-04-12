@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
-import { XCircleIcon } from '@heroicons/react/outline';
+import XCircleIcon from '@heroicons/react/24/outline/XCircleIcon';
 import ProductItem from '../components/ProductItem';
 import Product from '../models/Product';
 import db from '../utils/db';
