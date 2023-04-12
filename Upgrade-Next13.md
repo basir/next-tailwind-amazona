@@ -88,7 +88,7 @@ replace:
 ## Remove a tags
 
 - DropdownLink.js
--
+- other files has <a> inside <Link>
 
 ## App Router
 

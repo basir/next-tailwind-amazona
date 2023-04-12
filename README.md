@@ -1,11 +1,20 @@
-# Nextjs Tailwind ECommerce Website Like Amazon
+# Build Nextjs ECommerce Website Like Amazon
+
+- Tech: Nextjs 13, Next Auth 4
+- UI: Tailwind, chart.js, react-chartjs
+- DB: MongoDB, Mongoose
+- Payment: PayPal, Stripe
+- Content Hosting: cloudinary
+- Deploy: Github, Vercel, MongoDB Atlas
 
 ![next amazona](/public/app.jpg)
 
-Build ECommerce Website Like Amazon by Next.js
+## Resources
 
-- Source Code    :  https://github.com/basir/next-amazona
-- Demo Website :  https://nextjs-amazona-final.vercel.app
+- Youtube Video : https://youtu.be/_IBlyR5mRzA
+- Demo Website :  https://next-tailwind-amazona.vercel.app
+- Source Code   :  https://github.com/basir/next-tailwind-amazona
+- Full Course: [basir.thinkific.com](https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-js?coupon=SAVE90)
 
 ## What you will learn
 
@@ -20,19 +29,47 @@ Build ECommerce Website Like Amazon by Next.js
 
 ## Full Course
 
-Learn building this ecommerce website on Udemy with 90% discount:
-https://www.udemy.com/course/nextjs-ecommerce
+Get this course by 90% discount on Thinkific:
+https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-js?coupon=SAVE90
 
-## Run it Locally
+## Run Locally
 
-```
-$ git clone https://github.com/basir/next-tailwind-amazona
-$ cd next-tailwind-amazona
-$ npm install
-$ npm run dev
-$ Open http://localhost:3000/api/seed
-$ Open http://localhost:3000
-```
+1. Clone repo
+
+   ```shell
+    $ git clone git@github.com:basir/ts-mern-amazona.git
+    $ cd ts-mern-amazona
+   ```
+
+2. Create .env File
+
+   - duplicate .env.example and rename it to .env
+
+3. Setup MongoDB
+
+   - Local MongoDB
+   - Install it from [here](https://www.mongodb.com/try/download/community)
+   - In .env file update MONGODB_URI=mongodb://localhost/amazona
+   - OR Atlas Cloud MongoDB
+   - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
+   - In .env file update MONGODB_URI=mongodb+srv://your-db-connection
+
+4. Install and Run
+
+   ```
+   $ npm install
+   $ npm run dev
+   ```
+
+5. Seed Data
+
+   - Run this on browser: http://localhost:5000/api/seed
+   - It returns admin email and password and 6 sample products
+
+6. Admin Login
+
+   - Run http://localhost:3000/login
+   - Enter admin email and password and click Login
 
 ## Lessons
 
@@ -180,3 +217,7 @@ $ Open http://localhost:3000
     1. create filters
     2. list products
     3. show filters
+
+```
+
+```
