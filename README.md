@@ -56,9 +56,9 @@ https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-
 
 4. Install and Run
 
-   ```
-   $ npm install
-   $ npm run dev
+   ```shell
+     npm install
+     npm run dev
    ```
 
 5. Seed Data
@@ -217,7 +217,3 @@ https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-
     1. create filters
     2. list products
     3. show filters
-
-```
-
-```

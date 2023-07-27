@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "npm run build &&  rsync --exclude=.git -azP . ubuntu@3.98.5.128:/home/ubuntu/apps/next-amazona",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
