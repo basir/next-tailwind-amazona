@@ -1,6 +1,7 @@
 import { getToken } from 'next-auth/jwt';
 import Order from '../../../../../models/Order';
 import db from '../../../../../utils/db';
+import Product from '../../../../../models/Product';
 
 const handler = async (req, res) => {
   const user = await getToken({ req });
@@ -13,6 +14,13 @@ const handler = async (req, res) => {
     order.isDelivered = true;
     order.deliveredAt = Date.now();
     const deliveredOrder = await order.save();
+    for (const item of order.orderItems) {
+      const product = await Product.findById(item.id);
+      const index = order.orderItems.indexOf(item);
+      product.countInStock =
+        product.countInStock - order.orderItems[index].quantity;
+      await product.save();
+    }
     await db.disconnect();
     res.send({
       message: 'order delivered successfully',
@@ -25,3 +33,4 @@ const handler = async (req, res) => {
 };
 
 export default handler;
+
